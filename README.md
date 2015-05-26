@@ -78,7 +78,7 @@ MyApp::Application.initialize!
 
 Add Bundler to boot:
 
-```
+```ruby
 # config/boot.rb
 
 require 'rubygems'
