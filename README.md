@@ -95,3 +95,12 @@ rescue Bundler::GemNotFound => e
   exit!
 end if File.exist?(gemfile)
 ```
+
+Configuring Rack to use this application:
+
+```ruby
+# config.ru
+
+require ::File.expand_path('../config/environment',  __FILE__)
+run MyApp::Application
+```
