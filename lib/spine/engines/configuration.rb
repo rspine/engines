@@ -1,4 +1,5 @@
 require 'pathname'
+require 'logger'
 
 module Spine
   module Engines
@@ -17,6 +18,10 @@ module Spine
 
       def root=(value)
         @root = Pathname.new(value)
+      end
+
+      def logger
+        @logger ||= Logger.new(STDOUT)
       end
 
       def configure
