@@ -51,8 +51,8 @@ environment specific configurations in `config/environments/evironment_name.rb`.
 require File.expand_path('../boot', __FILE__)
 
 environment = ENV['RACK_ENV'] || 'development'
-
 Bundler.require(:default, environment)
+
 require File.expand_path('../../lib/my_app/application', __FILE__)
 
 MyApp::Application.configure do |config|
