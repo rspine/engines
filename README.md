@@ -3,6 +3,8 @@
 [![Gem Version](https://badge.fury.io/rb/spine-engines.svg)](http://badge.fury.io/rb/spine-engines)
 [![Dependency Status](https://gemnasium.com/rspine/engines.svg)](https://gemnasium.com/rspine/engines)
 [![Code Climate](https://codeclimate.com/github/rspine/engines/badges/gpa.svg)](https://codeclimate.com/github/rspine/engines)
+[![security](https://hakiri.io/github/rspine/engines/master.svg)](https://hakiri.io/github/rspine/engines/master)
+[![Inline docs](http://inch-ci.org/github/rspine/engines.svg?branch=master)](http://inch-ci.org/github/rspine/engines)
 
 Starting point for your Rack application and its configurations.
 
