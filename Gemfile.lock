@@ -8,7 +8,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     rack (1.6.4)
-    rake (10.4.2)
+    rake (10.5.0)
 
 PLATFORMS
   ruby
@@ -19,4 +19,4 @@ DEPENDENCIES
   spine-engines!
 
 BUNDLED WITH
-   1.10.3
+   1.11.2
