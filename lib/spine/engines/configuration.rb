@@ -8,6 +8,12 @@ module Spine
       attr_accessor :builder, :middleware
       attr_accessor :logger, :router
 
+      def load_paths!(paths)
+        paths.each do |path|
+          Dir[app.root.join(path)].each { |file| require file }
+        end
+      end
+
       def builder
         @builder ||= Rack::Builder.new
       end
