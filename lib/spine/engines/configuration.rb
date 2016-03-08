@@ -10,7 +10,7 @@ module Spine
 
       def load_paths!(paths)
         paths.each do |path|
-          Dir[app.root.join(path)].each { |file| require file }
+          Dir[root.join(path)].each { |file| require file }
         end
       end
 
