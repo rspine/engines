@@ -11,7 +11,7 @@ module Spine
         end
 
         def default_loaders
-          [LoadPaths, EnvironmentConfiguration]
+          []
         end
       end
     end
