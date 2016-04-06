@@ -31,6 +31,8 @@ module MyApp
     extend self
 
     # Add loaders
+    loaders << Spine::Engines::Loaders::LoadPaths
+    loaders << Spine::Engines::Loaders::EnvironmentConfiguration
     loaders << Spine::Engines::Loaders::Initializers
 
     # Add extensions
@@ -61,7 +63,7 @@ MyApp::Application.configure do |config|
   config.environment = environment
   config.root = File.expand_path('../..', __FILE__)
 
-  config.load_paths = %w(
+  config.load_paths! %w(
     lib/my_app/**/*.rb
   )
 
